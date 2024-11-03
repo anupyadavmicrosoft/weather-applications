@@ -6,26 +6,26 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack" ,
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/javitocor/Weather-App-JS.git"
+    "url": "https://github.com/anupyadavmicrosoft/weather-applications.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/javitocor/Weather-App-JS/issues"
+    "url": "https://github.com/javitocor/Weather-app/issues"
   },
-  "homepage": "https://github.com/javitocor/Weather-App-JS#readme",
+  "homepage": "https://github.com/anupyadavmicrosoft/weather-applications#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
     "style-loader": "^1.2.1",
     "webpack": "^5.96.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
   },
   "dependencies": {
     "places.js": "^1.19.0"
