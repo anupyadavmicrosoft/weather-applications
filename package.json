@@ -4,9 +4,9 @@
   "description": "<!--\r *** Thanks for checking out this README Template. If you have a suggestion that would\r *** make this better, please fork the repo and create a pull request or simply open\r *** an issue with the tag \"enhancement\".\r *** Thanks again! Now go create something AMAZING! :D\r -->",
   "main": "index.js",
   "scripts": {
-    "test": "echo\"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
-    "build": "webpack" ,
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
     "file-loader": "^6.0.0",
     "style-loader": "^1.2.1",
     "webpack": "^5.96.1",
-    "webpack-cli": "^5.1.4",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "places.js": "^1.19.0"
