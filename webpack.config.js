@@ -1,5 +1,6 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'development',
@@ -7,10 +8,14 @@ module.exports = {
   devtool: 'inline-source-map',
   plugins: [
     new CleanWebpackPlugin(),
+    new webpack.ProvidePlugin({
+      process: 'process/browser', // for node polyfills
+    }),
   ],
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    hashFunction: 'xxhash64', // Use a hashing function compatible with newer Node versions
   },
   module: {
     rules: [
@@ -28,5 +33,10 @@ module.exports = {
         ],
       },
     ],
+  },
+  resolve: {
+    fallback: {
+      crypto: require.resolve('crypto-browserify'), // Polyfill for crypto module
+    },
   },
 };
